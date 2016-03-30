@@ -1,14 +1,29 @@
 package com.autencio.project.euler;
 
-import org.junit.Assert;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+import org.junit.Before;
 import org.junit.Test;
 
-// TODO : setup unit testing in project
 public class MultiplesTest {
+	
+	private Multiples multiples;
 
-	@Test
-	public void testFirstTest() {
-		Assert.assertTrue(true);
-	}
+    @Before
+    public void createBaseEnvSettings() {
+        multiples = new Multiples();
+    }
+    
+    @Test
+    public void testTen() {
+    	int result = multiples.sumOfAllMutliples(10);
+    	assertThat(result, is(23));
+    }
 
+    @Test
+    public void testOneHundred() {
+    	int result = multiples.sumOfAllMutliples(100);
+    	assertThat(result, is(2318));
+    }
 }
