@@ -4,13 +4,13 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+// TODO : setup unit testing in project
 public class MultiplesTest {
 
 	@SuppressWarnings("deprecation")
 	@Test
 	public void testTestCase1() {
 		
-		System.out.println("test case 1");
 		Multiples multiples = new Multiples();
 		int result = multiples.sumOfAllMutliples(10);
 		Assert.assertEquals(23, result);
