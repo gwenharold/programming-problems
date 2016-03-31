@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Project Euler Problem 1 - Hacker Rank
+ *  
  * Find the sum of all the multiples of 3 or 5 below N
  */
 public class Multiples {
