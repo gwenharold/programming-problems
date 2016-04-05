@@ -11,7 +11,7 @@ public class MultiplesTest {
 	private Multiples multiples;
 
     @Before
-    public void createBaseEnvSettings() {
+    public void setUp() {
         multiples = new Multiples();
     }
     
