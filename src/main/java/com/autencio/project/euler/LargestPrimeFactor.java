@@ -3,6 +3,8 @@ package com.autencio.project.euler;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.autencio.common.MathUtils;
+
 /**
  * Project Euler 3 - Hacker Rank
  * 
@@ -29,7 +31,7 @@ public class LargestPrimeFactor {
 			largestPrime = 2;
 		}
 		for(long i = start; i <= max; i+=2) {
-			if(isFactor(number, i)) {
+			if(MathUtils.isFactor(number, i)) {
 				if(isPrime(i)) {
 					if(largestPrime < i) {
 						largestPrime = i;
@@ -45,10 +47,6 @@ public class LargestPrimeFactor {
 			return true;
 		}
 		return false;
-	}
-	
-	private boolean isFactor(long number, long isFactor) {
-		return (number % isFactor == 0);
 	}
 
 	private boolean isPrime(long number) {
