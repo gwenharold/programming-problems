@@ -6,24 +6,24 @@ import static org.hamcrest.Matchers.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MultiplesTest {
+public class Euler01Test {
 	
-	private Multiples multiples;
+	private Euler01 euler;
 
     @Before
     public void setUp() {
-        multiples = new Multiples();
+        euler = new Euler01();
     }
     
     @Test
     public void testTen() {
-    	int result = multiples.sumOfAllMutliples(10);
+    	int result = euler.sumOfAllMutliples(10);
     	assertThat(result, is(23));
     }
 
     @Test
     public void testOneHundred() {
-    	int result = multiples.sumOfAllMutliples(100);
+    	int result = euler.sumOfAllMutliples(100);
     	assertThat(result, is(2318));
     }
 }

@@ -6,18 +6,15 @@ import java.util.Map;
 import com.autencio.common.MathUtils;
 
 /**
- * Project Euler 3 - Hacker Rank
- * 
- * The prime factors of 13195 are 5, 7, 13 and 29.
- * What is the largest prime factor of a given number N?
+ * Largest prime factor
  * 
  * @author gwen
  */
-public class LargestPrimeFactor {
+public class Euler03 {
 
 	private Map<Long, Boolean> primes;
 	
-	public LargestPrimeFactor() {
+	public Euler03() {
 		primes = new HashMap<Long, Boolean>();
 	}
 	
@@ -41,7 +38,7 @@ public class LargestPrimeFactor {
 		}
 		return largestPrime;
 	}
-	
+
 	private boolean isEven(long number) {
 		if(number % 2 == 0) {
 			return true;

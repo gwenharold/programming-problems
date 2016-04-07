@@ -6,13 +6,13 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SmallestMultipleTest {
+public class Euler05Test {
 
-	private SmallestMultiple smallestMultiple;
+	private Euler05 smallestMultiple;
 
 	@Before
 	public void setUp() {
-		smallestMultiple = new SmallestMultiple();
+		smallestMultiple = new Euler05();
 	}
 
 	@Test

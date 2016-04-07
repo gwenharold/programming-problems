@@ -6,13 +6,13 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class NthPrimeTest {
+public class Euler07Test {
 
-	private NthPrime nthPrime;
+	private Euler07 nthPrime;
 	
 	@Before
 	public void setUp() {
-		nthPrime = new NthPrime();
+		nthPrime = new Euler07();
 	}
 	
 	@Test

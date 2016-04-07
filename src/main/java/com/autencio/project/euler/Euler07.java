@@ -6,18 +6,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
- * 
- * What is the 10 001st prime number?
+ * 10001st prime
  * 
  * @author gwen
  */
-public class NthPrime {
+public class Euler07 {
 
 	private List<Integer> primes;
 	private Map<Integer, Boolean> numbers;
 	
-	public NthPrime() {
+	public Euler07() {
 		
 		initializeMap();
 

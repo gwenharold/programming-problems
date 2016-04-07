@@ -2,14 +2,11 @@ package com.autencio.project.euler;
 
 
 /**
- * 
- * Project Euler Problem 11 - Hacker Rank
- * 
- * What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
+ * Largest product in a series
  * 
  * @author gwen
  */
-public class LargestProductInGrid {
+public class Euler08 {
 
 	public long largestProduct(int[][] grid, int length) {
 

@@ -8,13 +8,13 @@ import java.math.BigInteger;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SumOfEvenFibonacciTest {
+public class Euler02Test {
 
-	private SumOfEvenFibonacci sumOfEvenFibonacci;
+	private Euler02 sumOfEvenFibonacci;
 	
 	@Before
 	public void setUp() {
-		sumOfEvenFibonacci = new SumOfEvenFibonacci();
+		sumOfEvenFibonacci = new Euler02();
 	}
 
 	@Test

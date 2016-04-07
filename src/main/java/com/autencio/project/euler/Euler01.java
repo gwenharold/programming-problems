@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Project Euler Problem 1 - Hacker Rank
- *  
- * Find the sum of all the multiples of 3 or 5 below N
+ * Multiples of 3 and 5
+ * 
+ * @author gwen
  */
-public class Multiples {
+public class Euler01 {
 	
 	private static int THREE = 3;
 	private static int FIVE = 5;

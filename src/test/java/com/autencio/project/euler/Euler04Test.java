@@ -6,13 +6,13 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LargestPalindromeProductTest {
+public class Euler04Test {
 
-	private LargestPalindromeProduct largestPalindromeProduct;
+	private Euler04 largestPalindromeProduct;
 	
 	@Before
 	public void setUp() {
-		largestPalindromeProduct = new LargestPalindromeProduct();
+		largestPalindromeProduct = new Euler04();
 	}
 	
 	@Test

@@ -6,13 +6,13 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LargestPrimeFactorTest {
+public class Euler03Test {
 
-	private LargestPrimeFactor largestPrimeFactor;
+	private Euler03 largestPrimeFactor;
 	
 	@Before
 	public void setUp() {
-		largestPrimeFactor = new LargestPrimeFactor();
+		largestPrimeFactor = new Euler03();
 	}
 	
 	@Test

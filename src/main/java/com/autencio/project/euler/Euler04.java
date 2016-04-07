@@ -1,16 +1,12 @@
 package com.autencio.project.euler;
 
 /**
- * Project Euler 4 - Hacker Rank
- * 
- * A palindromic number reads the same both ways. 
- * The smallest 6 digit palindrome made from the product of two 3-digit numbers is 101101=143×707101101=143×707.
- * Find the largest palindrome made from the product of two 3-digit numbers which is less than N
+ * Largest palindrome product
  * 
  * @author gwen
  *
  */
-public class LargestPalindromeProduct {
+public class Euler04 {
 
 	public int getLargestPalindrome(int number) {
 

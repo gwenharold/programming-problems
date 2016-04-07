@@ -1,14 +1,11 @@
 package com.autencio.project.euler;
 
 /**
- * Project Euler 5 - Hacker Rank 25202520 is the smallest number that can be
- * divided by each of the numbers from 11 to 1010 without any remainder. What is
- * the smallest positive number that is evenly divisible(divisible with no
- * remainder) by all of the numbers from 11 to N?
+ * Smallest multiple
  * 
  * @author gwen
  */
-public class SmallestMultiple {
+public class Euler05 {
 
 	public int getSmallestMultiple(int max) {
 

@@ -6,13 +6,13 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SumSquareDifferenceTest {
+public class Euler06Test {
 
-private SumSquareDifference sumSquareDifference;
+private Euler06 sumSquareDifference;
 	
 	@Before
 	public void setUp() {
-		sumSquareDifference = new SumSquareDifference();
+		sumSquareDifference = new Euler06();
 	}
 	
 	@Test
