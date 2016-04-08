@@ -24,7 +24,7 @@ public class Euler03 {
 		long max = number;
 		int start = 3;
 		
-		if(isEven(number)) {
+		if(MathUtils.isEven(number)) {
 			largestPrime = 2;
 		}
 		for(long i = start; i <= max; i+=2) {
@@ -39,15 +39,8 @@ public class Euler03 {
 		return largestPrime;
 	}
 
-	private boolean isEven(long number) {
-		if(number % 2 == 0) {
-			return true;
-		}
-		return false;
-	}
-
 	private boolean isPrime(long number) {
-		
+
 		if(primes.containsKey(number)) {
 			return primes.get(number);
 		}
