@@ -1,6 +1,6 @@
 package com.autencio.project.euler;
 
-import com.autencio.common.MathUtils;
+import com.autencio.common.utils.MathUtils;
 
 /**
  * Project Euler 12  - Highly divisible triangular number

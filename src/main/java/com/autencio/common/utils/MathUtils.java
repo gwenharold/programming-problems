@@ -1,4 +1,4 @@
-package com.autencio.common;
+package com.autencio.common.utils;
 
 public class MathUtils {
 

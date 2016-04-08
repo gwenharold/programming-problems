@@ -3,7 +3,7 @@ package com.autencio.project.euler;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.autencio.common.MathUtils;
+import com.autencio.common.utils.MathUtils;
 
 /**
  * Largest prime factor
