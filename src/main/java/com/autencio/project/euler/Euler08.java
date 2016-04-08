@@ -1,6 +1,5 @@
 package com.autencio.project.euler;
 
-
 /**
  * Largest product in a series
  * 
@@ -8,59 +7,32 @@ package com.autencio.project.euler;
  */
 public class Euler08 {
 
-	public long largestProduct(int[][] grid, int length) {
+	public long solve(String input, int length) {
+		
+		int[] array = convert(input);
+		return getLargestProduct(array, length);
+	}
+	
+	private long getLargestProduct(int[] array, int n) {
 
-		int largest = 0;
-		int product = 0;
+		long result = 0;
+		int max = array.length - n;
 
-		for(int i = 0; i <= grid.length - 1; i++) {
-			for(int j = 0; j <= grid[0].length - 1; j++) {
+		for(int i = 0; i <= max; i++) {
+			long product = 1;
+			for(int j = 0; j < n; j++) {
+				int num = array[j+i];
+				product *= num;
+			}
 
-				// horizontal
-				if((j + length) <= grid[0].length) {
-					product = grid[i][j];
-					for(int y = 1; y < length; y++) {
-						product *= grid[i][j+y];
-					}
-					largest = checkIfProductIsLarger(largest, product);
-				}
-
-				// vertical
-				if((i + length) <= grid.length) {
-					product = grid[i][j];
-					for(int y = 1; y < length; y++) {
-						product *= grid[i+y][j];
-					}
-					largest = checkIfProductIsLarger(largest, product);
-				}
-
-				// backslash
-				if((j + length) <= grid[0].length && (i + length) <= grid.length) {
-					product = grid[i][j];
-					for(int y = 1; y < length; y++) {
-						product *= grid[i+y][j+y];
-					}
-					largest = checkIfProductIsLarger(largest, product);
-				}
-
-				// slash
-				if((i >= length - 1) && (j + length - 1) <= length) {
-					product = grid[i][j];
-					for(int y = 1; y < length; y++) {
-						product *= grid[i-y][j+y];
-					}
-					largest = checkIfProductIsLarger(largest, product);
-				}
+			if(product > result){
+				result = product;
 			}
 		}
-
-		return largest;
+		return result;
 	}
 
-	private int checkIfProductIsLarger(int largest, int product) {
-		if(product > largest) {
-			largest = product;
-		}
-		return largest;
+	private int[] convert(String input) {
+		return input.chars().map(x -> x - '0').toArray();
 	}
 }
