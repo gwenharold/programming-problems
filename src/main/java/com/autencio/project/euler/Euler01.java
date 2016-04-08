@@ -3,6 +3,8 @@ package com.autencio.project.euler;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.autencio.common.utils.MathUtils;
+
 /**
  * Multiples of 3 and 5
  * 
@@ -25,7 +27,7 @@ public class Euler01 {
 
 		for(int multiple : multiples) {
 			for(int i = multiple; i < number; i += multiple) {
-				if(isMultiple(i, multiple)) {
+				if(MathUtils.isFactor(i, multiple)) {
 					if(!list.contains(i)) {
 						sum += i;
 						list.add(i);

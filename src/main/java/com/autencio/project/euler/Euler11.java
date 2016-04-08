@@ -1,12 +1,11 @@
 package com.autencio.project.euler;
 
-
 /**
  * Largest product in a series
  * 
  * @author gwen
  */
-public class LargestProductInGrid {
+public class Euler11 {
 
 	public long largestProduct(int[][] grid, int length) {
 
@@ -22,7 +21,9 @@ public class LargestProductInGrid {
 					for(int y = 1; y < length; y++) {
 						product *= grid[i][j+y];
 					}
-					largest = checkIfProductIsLarger(largest, product);
+					if(product > largest) {
+						largest = product;
+					}
 				}
 
 				// vertical
@@ -31,7 +32,9 @@ public class LargestProductInGrid {
 					for(int y = 1; y < length; y++) {
 						product *= grid[i+y][j];
 					}
-					largest = checkIfProductIsLarger(largest, product);
+					if(product > largest) {
+						largest = product;
+					}
 				}
 
 				// backslash
@@ -40,7 +43,9 @@ public class LargestProductInGrid {
 					for(int y = 1; y < length; y++) {
 						product *= grid[i+y][j+y];
 					}
-					largest = checkIfProductIsLarger(largest, product);
+					if(product > largest) {
+						largest = product;
+					}
 				}
 
 				// slash
@@ -49,18 +54,13 @@ public class LargestProductInGrid {
 					for(int y = 1; y < length; y++) {
 						product *= grid[i-y][j+y];
 					}
-					largest = checkIfProductIsLarger(largest, product);
+					if(product > largest) {
+						largest = product;
+					}
 				}
 			}
 		}
 
-		return largest;
-	}
-
-	private int checkIfProductIsLarger(int largest, int product) {
-		if(product > largest) {
-			largest = product;
-		}
 		return largest;
 	}
 }
