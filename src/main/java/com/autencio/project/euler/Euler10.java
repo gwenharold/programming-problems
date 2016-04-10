@@ -10,7 +10,7 @@ public class Euler10 {
 
 	private long getSum(long input) {
 
-		int sum = 0;
+		long sum = 0;
 		for(int i = 2; i <= input; i++) {
 			if(MathUtils.isPrime(i)) {
 				sum += i;
